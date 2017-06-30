@@ -1,0 +1,26 @@
+<html>
+<head>
+  <title>Няшко</title>
+   </head>
+<body>
+<style>
+   body {
+  background-color: #FFEBCD;
+}
+  </style>
+    <h1 align="center" style="color:#0000FF"> Варин Фарит Фанисович </h1>
+  <p align="center"><img src="https://pp.userapi.com/c837437/v837437970/3c410/r4587r_mDa8.jpg" alt="изображение" width="300" height="182" /></p>
+    <p>Мужчина, 28 лет, родился 26 мая 1989.</p>
+  <p>Желаемая должность: тестировщик.</p>
+  <p>Занятость: полная занятость. </p>
+  <p>График: полный рабочий день, 5/2</p>
+  <p>Опыт работы: 2 года, технический специалист СКБ Контур, www.kontur.ru </p>
+  <p>Образование: высшее, закончил Сибирский университет потребительской кооперации, г. Новосибирск
+Факультет Экономический, Прикладная информатика.</p>
+  <p>Знание языков: русский, английский(Pre-Intermediate).</p>
+  <p>Дополнительная информация: служил в армии</p>
+      <h1 align="center" style="color:#DA70D6"> Видосики </h1>
+  <iframe width="854" height="480" src="https://www.youtube.com/embed/6uj-1t89QUU" frameborder="0" allowfullscreen></iframe>
+  <iframe width="854" height="480" src="https://www.youtube.com/embed/cwJKjuyLv80" frameborder="0" allowfullscreen></iframe>
+</body>
+</html>
