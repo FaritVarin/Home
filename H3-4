@@ -1,0 +1,41 @@
+#/!bin/bash   указывается путь к bash-интерпретатору
+
+options=(     
+	'1'
+	"2"                 опции при запуске, кнопки
+	'3'
+	'4'
+	'5'
+)
+echo 'Please choose an option'               предложение выбора опции от 1 до 5
+select input in "${options[@]}"; do
+	case "$input" in
+		"${options[0]}")             в зависимости от выбора кнопки происходит действие
+			ls
+			;;
+		"${options[1]}")
+			date $'+Time: %T\nDate: %D'        нажали 1 выводит дату и время
+			;;
+		"${options[2]}")
+			read -p 'What file do you wish to check? ' finput        нажали 2 спрашивает "какой файл вы хотите проверить?" 
+			if [[ -d $finput ]]; then
+				format='%s is a directory.\n'                    предлогает указать файл из директории  
+			elif [[ -f $finput ]]; then
+				format='%s is a file.\n'                         выводит наименование файла на экран
+			else
+				format='%s does not exist.\n'
+			fi
+			printf "$format" "$finput"
+			;;
+		"${options[3]}")
+			read -p 'Please enter filename: ' binput                  нажали 3 предлагает "пожалуйста укажите имя_файла"
+			cp "$binput"{,.bak}
+			;;
+		"${options[4]}")                                                  нажали 4 прерывание цикла
+			break
+			;;
+		*)
+			echo 'Not a valid option.'                                нажали какую либо другую цифру\букву\символ покажет ошибку "неверная операция"
+			;;
+	esac
+done
