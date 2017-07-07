@@ -1,0 +1,6 @@
+SELECT *  FROM [Customers] where country= "Germany"
+SELECT *  FROM [Customers] where ContactName like "%e"
+INSERT INTO Customers (CustomerID, CustomerName, ContactName, Address, City, PostalCode, Country) values (666, 'Piu Pi', 'Farit', 'Earth', 'NSK', 009, 'Russia')   Скрин http://savepic.ru/14756209.jpg
+UPDATE Customers SET ContactName='Varin' where ContactName='Farit'    Скрин http://savepic.ru/14779763.jpg
+DELETE FROM Customers where country='Russia'   Скрин http://savepic.ru/14784882.jpg
+SELECT * FROM Orders INNER JOIN Employees on Orders.EmployeeID = Employees.EmployeeID where Employees.firstname='Steven'  Скрин http://savepic.ru/14763383.jpg
